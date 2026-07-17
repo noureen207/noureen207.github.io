@@ -38,50 +38,81 @@ window.PORTFOLIO_CONTENT = {
 
   /* The six central stages shown in the home-page diagram. */
   aiLifecycle: {
-    eyebrow: "END-TO-END MODEL LIFECYCLE",
-    title: "Steps to build efficient, reliable AI",
-    subtitle: "Quality is designed into every stage—not checked only at the end.",
-    stages: [
-      {
-        number: "01",
-        title: "Frame",
-        detail: "Users, constraints and measurable success criteria",
-      },
-      {
-        number: "02",
-        title: "Curate",
-        detail: "Representative data, lineage, privacy and quality",
-      },
-      {
-        number: "03",
-        title: "Build",
-        detail: "Baselines, architecture, retrieval and adaptation",
-      },
-      {
-        number: "04",
-        title: "Evaluate",
-        detail: "Quality, safety, robustness and reproducibility",
-      },
-      {
-        number: "05",
-        title: "Deploy",
-        detail: "Latency, cost, observability and secure delivery",
-      },
-      {
-        number: "06",
-        title: "Improve",
-        detail: "Monitor drift, collect feedback and iterate",
-      },
-    ],
-    qualityChecks: [
-      { label: "Metrics before modeling", position: "top-left" },
-      { label: "Data quality & governance", position: "top-right" },
-      { label: "Security threat modeling", position: "middle-left" },
-      { label: "Latency & cost budgets", position: "middle-right" },
-      { label: "Failure-mode analysis", position: "bottom-left" },
-      { label: "Drift & feedback loops", position: "bottom-right" },
-    ],
-  },
+  eyebrow: "END-TO-END AI MODEL LIFECYCLE",
+  title: "How I build efficient, reliable AI",
+  subtitle:
+    "I focus on quality, safety, efficiency, and reliability throughout the complete model lifecycle.",
+
+  stages: [
+    {
+      number: "01",
+      title: "Define",
+      detail: "Problem and success metrics",
+    },
+    {
+      number: "02",
+      title: "Data",
+      detail: "Collect and govern",
+    },
+    {
+      number: "03",
+      title: "Prepare",
+      detail: "Validate and transform",
+    },
+    {
+      number: "04",
+      title: "Build",
+      detail: "Design and train",
+    },
+    {
+      number: "05",
+      title: "Verify",
+      detail: "Quality, safety, and robustness",
+    },
+    {
+      number: "06",
+      title: "Deploy",
+      detail: "Optimize and serve",
+    },
+    {
+      number: "07",
+      title: "Monitor",
+      detail: "Quality, drift, and cost",
+    },
+    {
+      number: "08",
+      title: "Improve",
+      detail: "Feedback and retraining",
+    },
+  ],
+
+  qualityChecks: [
+    {
+      label: "Define measurable success",
+      position: "top-left",
+    },
+    {
+      label: "Data quality and governance",
+      position: "top-right",
+    },
+    {
+      label: "Reproducible development",
+      position: "middle-left",
+    },
+    {
+      label: "Latency and cost efficiency",
+      position: "middle-right",
+    },
+    {
+      label: "Safety and failure analysis",
+      position: "bottom-left",
+    },
+    {
+      label: "Continuous monitoring",
+      position: "bottom-right",
+    },
+  ],
+},
 
   experienceIntro: {
     eyebrow: "EXPERIENCE & EXPERTISE",
