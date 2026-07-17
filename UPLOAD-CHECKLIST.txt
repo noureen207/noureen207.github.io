@@ -1,0 +1,14 @@
+GITHUB PAGES UPLOAD CHECKLIST
+
+[ ] Create a public repository named YOUR-USERNAME.github.io
+[ ] Upload index.html, content.js, styles.css, script.js, .nojekyll, and assets/
+[ ] Confirm index.html is at the repository root
+[ ] Open Settings > Pages
+[ ] Select Deploy from a branch
+[ ] Select main and / (root)
+[ ] Save and wait for the GitHub Pages link
+[ ] Open every tab and test the Download CV button
+[ ] Add the exact Google Scholar profile URL when available
+[ ] Add real project/demo links in content.js
+[ ] Add verified testimonials in content.js
+
