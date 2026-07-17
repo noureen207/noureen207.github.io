@@ -28,97 +28,96 @@ window.PORTFOLIO_CONTENT = {
     summary:
       "I build trustworthy, efficient AI systems—from agentic RAG and model fine-tuning to rigorous evaluation, security testing, and GPU deployment.",
     availability: "Open to AI engineering and research opportunities",
-    stats: [
-      { value: "4.0", label: "Graduate GPA", note: "MS Computer Science" },
-      { value: "80+", label: "HPC centers", note: "Knowledge sources crawled" },
-      { value: "243", label: "Benchmark tasks", note: "Measured across seeds" },
+    education: [
+      {
+        degree: "Bachelor",
+        major: "Computer and Communication Engineering",
+        institution: "Alexandria University",
+        gpa: "ADD GPA",
+      },
+      {
+        degree: "Master of Science",
+        major: "Computer Science",
+        institution: "Texas A&M University–San Antonio",
+        gpa: "4.0",
+      },
     ],
-    focus: ["Agentic AI", "RAG", "LLM Evaluation", "AI Security"],
+    focusLabel: "AI & HPC FOCUS",
+    focus: [
+      "Agentic AI & Multi-Agent Orchestration",
+      "RAG & Stateful Memory",
+      "LLM Fine-Tuning (QLoRA / LoRA / PEFT)",
+      "Model Evaluation & MLOps",
+      "AI Security & Threat Modeling",
+      "AI for HPC",
+      "GPU / CUDA (A100)",
+      "SLURM & Distributed Computing",
+    ],
   },
 
-  /* The six central stages shown in the home-page diagram. */
+  /* The eight central stages shown in the home-page diagram. */
   aiLifecycle: {
-  eyebrow: "END-TO-END AI MODEL LIFECYCLE",
-  title: "How I build efficient, reliable AI",
-  subtitle:
-    "I focus on quality, safety, efficiency, and reliability throughout the complete model lifecycle.",
-
-  stages: [
-    {
-      number: "01",
-      title: "Define",
-      detail: "Problem and success metrics",
-    },
-    {
-      number: "02",
-      title: "Data",
-      detail: "Collect and govern",
-    },
-    {
-      number: "03",
-      title: "Prepare",
-      detail: "Validate and transform",
-    },
-    {
-      number: "04",
-      title: "Build",
-      detail: "Design and train",
-    },
-    {
-      number: "05",
-      title: "Verify",
-      detail: "Quality, safety, and robustness",
-    },
-    {
-      number: "06",
-      title: "Deploy",
-      detail: "Optimize and serve",
-    },
-    {
-      number: "07",
-      title: "Monitor",
-      detail: "Quality, drift, and cost",
-    },
-    {
-      number: "08",
-      title: "Improve",
-      detail: "Feedback and retraining",
-    },
-  ],
-
-  qualityChecks: [
-    {
-      label: "Define measurable success",
-      position: "top-left",
-    },
-    {
-      label: "Data quality and governance",
-      position: "top-right",
-    },
-    {
-      label: "Reproducible development",
-      position: "middle-left",
-    },
-    {
-      label: "Latency and cost efficiency",
-      position: "middle-right",
-    },
-    {
-      label: "Safety and failure analysis",
-      position: "bottom-left",
-    },
-    {
-      label: "Continuous monitoring",
-      position: "bottom-right",
-    },
-  ],
-},
+    eyebrow: "END-TO-END AI MODEL LIFECYCLE",
+    title: "How I build efficient, reliable AI",
+    subtitle:
+      "I focus on quality, safety, efficiency, and reliability throughout the complete model lifecycle.",
+    stages: [
+      {
+        number: "01",
+        title: "Define",
+        detail: "Problem and success metrics",
+      },
+      {
+        number: "02",
+        title: "Data",
+        detail: "Collect and govern",
+      },
+      {
+        number: "03",
+        title: "Prepare",
+        detail: "Validate and transform",
+      },
+      {
+        number: "04",
+        title: "Build",
+        detail: "Design and train",
+      },
+      {
+        number: "05",
+        title: "Verify",
+        detail: "Quality, safety, and robustness",
+      },
+      {
+        number: "06",
+        title: "Deploy",
+        detail: "Optimize and serve",
+      },
+      {
+        number: "07",
+        title: "Monitor",
+        detail: "Quality, drift, and cost",
+      },
+      {
+        number: "08",
+        title: "Improve",
+        detail: "Feedback and retraining",
+      },
+    ],
+    qualityChecks: [
+      { label: "Define measurable success", position: "top-left" },
+      { label: "Reproducible development", position: "middle-left" },
+      { label: "Latency and cost efficiency", position: "middle-right" },
+      { label: "Data quality and governance", position: "top-right" },
+      { label: "Safety and failure analysis", position: "bottom-left" },
+      { label: "Continuous monitoring", position: "bottom-right" },
+    ],
+  },
 
   experienceIntro: {
     eyebrow: "EXPERIENCE & EXPERTISE",
-    title: "From research question to running system.",
+    title: "From research question to delivered system.",
     copy:
-      "I work across the full AI lifecycle: data and experiments, fine-tuning and retrieval, evaluation and security, then deployment on real compute infrastructure.",
+      "I have owned AI systems from problem framing and data pipelines through fine-tuning, retrieval, evaluation, security hardening, API delivery, and GPU deployment—turning research prototypes into working, user-facing systems.",
   },
 
   experience: [
@@ -127,11 +126,20 @@ window.PORTFOLIO_CONTENT = {
       role: "HPC Research Intern · ML for Systems",
       organization: "Research Computing · Texas A&M University–San Antonio",
       summary:
-        "Researching ML-driven optimization for heterogeneous GPU/CPU clusters, including resource allocation, scheduling, and workload prediction.",
-      highlights: [
-        "50+ source AI-for-HPC survey",
-        "Throughput and scalability benchmarking",
-        "Research-team presentations",
+        "Developing ML-driven optimization approaches for heterogeneous GPU/CPU clusters, spanning problem formulation, workload prediction, benchmark design, and research translation.",
+      details: [
+        {
+          label: "Optimization scope",
+          text: "Frame resource allocation, scheduling, and job management as measurable applied-ML problems grounded in real cluster constraints.",
+        },
+        {
+          label: "Model development",
+          text: "Develop and benchmark workload-prediction models across the experimental lifecycle—from data preparation and model comparison to throughput, scalability, and efficiency analysis.",
+        },
+        {
+          label: "Research translation",
+          text: "Synthesize findings from 50+ AI-for-HPC sources into an implementation-oriented survey and present recommendations to the research team to guide system design.",
+        },
       ],
     },
     {
@@ -139,11 +147,28 @@ window.PORTFOLIO_CONTENT = {
       role: "Research Assistant · LLM Systems, Agentic AI & Evaluation",
       organization: "Texas A&M University–San Antonio",
       summary:
-        "Designed and deployed a multi-agent HPC assistant with RAG, stateful memory, domain fine-tuning, FastAPI, and GPU infrastructure.",
-      highlights: [
-        "4,000+ instruction pairs",
-        "80+ HPC knowledge sources",
-        "243 evaluation tasks",
+        "Completed end-to-end delivery of a production-facing, multi-agent HPC support assistant—from source-data ingestion and domain fine-tuning to evaluation, security testing, API serving, and A100 GPU deployment.",
+      details: [
+        {
+          label: "Production system",
+          text: "Architected an orchestrator coordinating retrieval, generation, and documentation-crawling agents with stateful multi-turn memory; served the system through FastAPI and a web interface on Jetstream2 A100 GPUs for end-user access.",
+        },
+        {
+          label: "Domain adaptation",
+          text: "Built the training-data pipeline across 80+ university and national supercomputing centers, generated 4,000+ instruction pairs through teacher-student distillation, and fine-tuned Qwen2.5-Coder-7B with QLoRA using 4-bit NF4 quantization.",
+        },
+        {
+          label: "Retrieval layer",
+          text: "Engineered citation-grounded RAG with ChromaDB, BGE-large embeddings, top-k semantic retrieval, and live knowledge ingestion through automated crawling and manual uploads—allowing new clusters to be added without retraining.",
+        },
+        {
+          label: "Evaluation gate",
+          text: "Built an end-to-end LLM/SLM evaluation framework on Google Vertex AI across 243 code-generation tasks, measuring execution time, memory use, and cross-seed reproducibility before production release.",
+        },
+        {
+          label: "Security and research impact",
+          text: "Tested all OWASP Top 10 for LLM Applications risks, developed adversarial and encoding-based attacks, documented failure modes and mitigations, and translated the work into IEEE and arXiv publications.",
+        },
       ],
     },
     {
@@ -151,11 +176,16 @@ window.PORTFOLIO_CONTENT = {
       role: "Graduate Assistant",
       organization: "College of Graduate Studies · Texas A&M University–San Antonio",
       summary:
-        "Provide institutional support and clear cross-department stakeholder communication alongside full-time research and coursework.",
-      highlights: [
-        "Cross-functional coordination",
-        "Graduate student support",
-        "Concurrent research delivery",
+        "Provide dependable institutional support and cross-department coordination while maintaining full research and graduate-coursework commitments.",
+      details: [
+        {
+          label: "Stakeholder delivery",
+          text: "Support graduate-studies operations through accurate communication, clear follow-through, and coordination across departmental and graduate-student stakeholders.",
+        },
+        {
+          label: "Concurrent ownership",
+          text: "Manage institutional responsibilities alongside active AI research and graduate coursework, demonstrating prioritization and consistent delivery across parallel workstreams.",
+        },
       ],
     },
     {
@@ -163,8 +193,17 @@ window.PORTFOLIO_CONTENT = {
       role: "iOS Mobile Application Developer Intern",
       organization: "Pharos Solutions · Alexandria, Egypt",
       summary:
-        "Built and shipped educational iOS features in Swift across development, debugging, testing, and release workflows.",
-      highlights: ["Production codebase", "Full SDLC participation", "Swift / iOS"],
+        "Completed educational iOS features in Swift within a production codebase, contributing across the full software delivery lifecycle from implementation through release.",
+      details: [
+        {
+          label: "Production engineering",
+          text: "Developed application features in Swift within an established team codebase and carried the work through debugging and functional testing.",
+        },
+        {
+          label: "Release ownership",
+          text: "Participated in the complete delivery workflow—feature development, defect resolution, validation, and release—building practical end-to-end product engineering experience.",
+        },
+      ],
     },
   ],
 
@@ -174,17 +213,6 @@ window.PORTFOLIO_CONTENT = {
     { title: "Evaluation", detail: "BERTScore · ROUGE-L · reproducibility" },
     { title: "Infrastructure", detail: "Vertex AI · Azure · SLURM · CUDA" },
     { title: "AI security", detail: "OWASP LLM Top 10 · adversarial testing" },
-  ],
-
-  education: [
-    {
-      degree: "MS Computer Science · 4.0 GPA",
-      school: "Texas A&M University–San Antonio · Expected Aug 2026",
-    },
-    {
-      degree: "BSc Computer & Communication Engineering",
-      school: "Alexandria University · 2024",
-    },
   ],
 
   projectsIntro: {

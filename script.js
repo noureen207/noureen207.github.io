@@ -32,8 +32,8 @@
     const home = content.home;
     const lifecycle = content.aiLifecycle;
     const displayStages = [
-      ...lifecycle.stages.slice(0, 3),
-      ...lifecycle.stages.slice(3).reverse(),
+      ...lifecycle.stages.slice(0, 4),
+      ...lifecycle.stages.slice(4).reverse(),
     ];
 
     document.querySelector("#panel-home").innerHTML = `
@@ -94,14 +94,18 @@
         </div>
 
         <div class="signal-row" aria-label="Career highlights">
-          ${home.stats.map((stat) => `
-            <article class="signal-card">
-              <strong>${escapeHtml(stat.value)}</strong>
-              <div><b>${escapeHtml(stat.label)}</b><small>${escapeHtml(stat.note)}</small></div>
+          ${home.education.map((item) => `
+            <article class="signal-card degree-card">
+              <div class="degree-card-head">
+                <span>${escapeHtml(item.degree)}</span>
+                <strong>GPA <b>${escapeHtml(item.gpa)}</b></strong>
+              </div>
+              <h3>${escapeHtml(item.major)}</h3>
+              <small>${escapeHtml(item.institution)}</small>
             </article>
           `).join("")}
           <article class="signal-card focus-card">
-            <span>SELECTED FOCUS</span>
+            <span>${escapeHtml(home.focusLabel || "SELECTED FOCUS")}</span>
             ${tagList(home.focus, "focus-list")}
           </article>
         </div>
@@ -122,8 +126,15 @@
                   <p class="timeline-date">${escapeHtml(item.dates)}</p>
                   <h2>${escapeHtml(item.role)}</h2>
                   <h3>${escapeHtml(item.organization)}</h3>
-                  <p>${escapeHtml(item.summary)}</p>
-                  ${tagList(item.highlights)}
+                  <p class="experience-summary">${escapeHtml(item.summary)}</p>
+                  <ul class="experience-details">
+                    ${item.details.map((detail) => `
+                      <li>
+                        <b>${escapeHtml(detail.label)}</b>
+                        <span>${escapeHtml(detail.text)}</span>
+                      </li>
+                    `).join("")}
+                  </ul>
                 </div>
               </article>
             `).join("")}
@@ -137,12 +148,6 @@
                 <div><b>${escapeHtml(item.title)}</b><small>${escapeHtml(item.detail)}</small></div>
               </div>
             `).join("")}
-            <div class="education-card">
-              <p class="micro-label">EDUCATION</p>
-              ${content.education.map((item) => `
-                <b>${escapeHtml(item.degree)}</b><span>${escapeHtml(item.school)}</span>
-              `).join("")}
-            </div>
           </aside>
         </div>
       </div>

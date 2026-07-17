@@ -8,7 +8,7 @@ GITHUB PAGES UPLOAD CHECKLIST
 [ ] Select main and / (root)
 [ ] Save and wait for the GitHub Pages link
 [ ] Open every tab and test the Download CV button
+[ ] Replace ADD GPA in content.js with the correct bachelor's GPA
 [ ] Add the exact Google Scholar profile URL when available
 [ ] Add real project/demo links in content.js
 [ ] Add verified testimonials in content.js
-

@@ -26,6 +26,10 @@ organized under clear headings such as `home`, `experience`, `projects`, and
 
 Keep quotation marks and commas in place when changing text.
 
+The résumé does not state a bachelor's GPA, so the Home section contains the
+placeholder `ADD GPA`. Replace that text in `content.js` with the correct
+number before publishing.
+
 ### Add real testimonials
 
 Find this line in `content.js`:
@@ -91,4 +95,3 @@ Then open `http://localhost:8000`.
 - `script.js` — tabs, rendering, demos, and interactions
 - `assets/` — résumé and favicon
 - `.nojekyll` — tells GitHub Pages to serve the files directly
-
